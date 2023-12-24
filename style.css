@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rgb-color1: 244, 229, 254;
+    --rgb-color2: 21, 0, 33;
+    --transition: .2s linear;
+}
+
+body {
+    color: rgb(var(--rgb-color1));
+    background: rgb(var(--rgb-color2));
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.wrap{
+    padding: 10px 30px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.list{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+}
+.list-header{
+    color: rgb(var(--rgb-color1), .5);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.items{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4em;
+    transition: var(--transition);
+}
+.items:hover{
+    color: rgb(var(--rgb-color1), .5);
+}
+.item{
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 0 300px;
+    justify-self: start;
+    background: rgba(255, 255, 255, 0.1);
+}
+.item__id{
+    flex:1 0 20px;
+    justify-content: center;
+}
